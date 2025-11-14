@@ -456,3 +456,67 @@ body.accessible.dark {
     margin-bottom: 10px;
     font-size: 22px;
 }
+/* Контакты */
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contacts-info p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contacts-info a {
+    color: #0044aa;
+    text-decoration: none;
+}
+.contacts-info a:hover {
+    text-decoration: underline;
+}
+
+/* Форма */
+.contact-form label {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccd3dd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4a7aff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 122, 255, 0.2);
+}
+
+.success-msg {
+    padding: 12px 15px;
+    background: #e5f9e7;
+    color: #1a7d27;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #b6e8bd;
+}
+
+.error-msg {
+    padding: 12px 15px;
+    background: #ffe5e5;
+    color: #b30000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ffb2b2;
+}
