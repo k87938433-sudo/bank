@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "fullname": "Администратор",
+    "email": "admin@bankx.ru",
+    "role": "admin",
+    "password_hash": "$2y$10$CwS2G7U2ndnJtao7i3Jf9eCjO9G7V9v0ZyE7V6U8Ih7fL9fzWvC.W"
+  },
+  {
+    "id": 2,
+    "fullname": "Клиент Тестовый",
+    "email": "client@bankx.ru",
+    "role": "client",
+    "password_hash": "$2y$10$0gTQjZhC8WkpGNnXGzk8Oe6e7xTTIqMe84PYTbY4k0E9csFkZVw9y"
+  }
+]
