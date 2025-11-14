@@ -1,102 +1,122 @@
-
-/* Modern banking blue-turquoise theme */
+/* Палитра */
 :root {
-    --primary-blue: #003A63;
-    --primary-blue-dark: #002948;
-    --accent-turquoise: #00B8A9;
-    --accent-turquoise-light: #D8F7F3;
-    --background: #F4F8FA;
-    --text-color: #1A1A1A;
+    --blue: #0057B8;
+    --dark-blue: #003C7A;
+    --teal: #00C8C8;
+    --light-teal: #D7FFFF;
+    --dark: #1A1A1A;
+    --white: #ffffff;
+
+    --radius: 18px;
 }
 
+/* Общие настройки */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: var(--background);
-    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    background: #F5F8FA;
+    color: var(--dark);
+    position: relative;
+    overflow-x: hidden;
 }
 
-/* Header */
-.site-header {
-    background: linear-gradient(135deg, var(--primary-blue), var(--accent-turquoise));
-    padding: 15px 0;
-    color: #fff;
+/* Декоративные круги */
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
 }
 
-.header-inner {
-    max-width: 1100px;
-    margin: 0 auto;
+.bg-circle-1 {
+    width: 420px;
+    height: 420px;
+    background: var(--light-teal);
+    top: -120px;
+    right: -150px;
+    filter: blur(30px);
+}
+
+.bg-circle-2 {
+    width: 300px;
+    height: 300px;
+    background: var(--blue);
+    top: 350px;
+    left: -150px;
+    opacity: 0.3;
+    filter: blur(40px);
+}
+
+/* HERO */
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 90px 10%;
+    gap: 50px;
 }
 
-.main-nav a {
-    color: #E0F7F5;
-    text-decoration: none;
-    margin-right: 12px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-.main-nav a:hover {
-    color: #fff;
-    text-shadow: 0 0 6px #fff;
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--dark-blue);
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--primary-blue);
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: 0.3s;
+.hero-text p {
+    font-size: 18px;
+    margin: 18px 0 25px;
+    max-width: 480px;
 }
-.btn:hover {
-    background: var(--primary-blue-dark);
+
+/* Баннер справа */
+.hero-banner {
+    background: var(--blue);
+    color: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.hero-banner .small {
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+/* Кнопки */
+.btn-primary {
+    background: var(--blue);
+    padding: 14px 32px;
+    color: var(--white);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .btn-secondary {
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--accent-turquoise);
-    color: #fff;
-    border-radius: 6px;
+    background: var(--teal);
+    padding: 12px 28px;
+    color: var(--dark);
+    border-radius: var(--radius);
     text-decoration: none;
-    transition: 0.3s;
-}
-.btn-secondary:hover {
-    background: #00998F;
+    font-weight: 600;
 }
 
-/* Cards */
-.product-block, .feature, .hero-text, .hero-banner, .news-item {
-    background: #fff;
-    border-left: 5px solid var(--accent-turquoise);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+/* Блок преимуществ */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 30px;
 }
 
-/* Forms */
-.form input, .form textarea, .form select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    border-radius: 6px;
-    border: 1px solid var(--accent-turquoise);
-    background: #fff;
-    font-size: 15px;
-}
-
-/* Footer */
-.site-footer {
-    background: var(--primary-blue-dark);
-    color: #fff;
+.feature {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 25px;
     text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.feature img.icon {
+    width: 42px;
+    margin-bottom: 12px;
 }
