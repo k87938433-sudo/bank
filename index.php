@@ -1,47 +1,78 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк Х — надёжный партнёр</title>
 
-<!-- Декоративный фон -->
-<div class="bg-circle bg-circle-1"></div>
-<div class="bg-circle bg-circle-2"></div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">БАНК <span>Х</span></div>
+
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="bank.html">О банке</a>
+        <a href="products.html">Продукты</a>
+        <a href="online.html">Интернет-банк</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <div class="controls">
+        <button id="visually-impaired-btn">👁 Версия для слабовидящих</button>
+        <button id="darkmode-btn">🌙</button>
+    </div>
+</header>
 
 <section class="hero">
     <div class="hero-text">
-        <h1>АО «Банк Х» — надёжный партнёр в финансовом мире</h1>
-        <p>
-            Предлагаем современные банковские решения: вклады, кредиты, карты,
-            дистанционные сервисы и индивидуальные финансовые программы.
-        </p>
-        <a href="products.php" class="btn-primary">Посмотреть продукты</a>
+        <h1>Банк Х — надёжный партнёр в финансовом мире</h1>
+        <p>Современные банковские решения для частных клиентов и бизнеса.</p>
+        <a class="btn-primary" href="products.html">Посмотреть продукты</a>
     </div>
 
-    <div class="hero-banner">
-        <div class="banner-content">
-            <h2>Вклад «Надёжный»</h2>
-            <p>Повышенная ставка, возможность пополнения и частичного снятия.</p>
-            <p class="small">Оформите заявку онлайн и получите персональное предложение.</p>
-            <a href="deposit_application.php" class="btn-secondary">Оформить вклад</a>
+    <div class="hero-img">
+        <img src="img/hero-bank.svg" alt="Банковские услуги">
+    </div>
+</section>
+
+<section class="benefits">
+    <h2>Наши преимущества</h2>
+
+    <div class="benefit-grid">
+        <div class="benefit-card">
+            <img src="img/icon-safe.svg" alt="">
+            <h3>Надёжность</h3>
+            <p>Защита вкладов и безопасные технологии обработки данных.</p>
+        </div>
+
+        <div class="benefit-card">
+            <img src="img/icon-online.svg" alt="">
+            <h3>Онлайн-сервисы 24/7</h3>
+            <p>Интернет-банк и мобильное приложение доступны всегда.</p>
+        </div>
+
+        <div class="benefit-card">
+            <img src="img/icon-personal.svg" alt="">
+            <h3>Персональный подход</h3>
+            <p>Индивидуальные решения для каждой категории клиентов.</p>
         </div>
     </div>
 </section>
 
-<section class="features">
-    <div class="feature">
-        <img src="assets/icons/shield.svg" alt="" class="icon">
-        <h3>Прозрачные условия</h3>
-        <p>Все ставки и комиссии — без скрытых пунктов и мелкого шрифта.</p>
-    </div>
-
-    <div class="feature">
-        <img src="assets/icons/clock.svg" alt="" class="icon">
-        <h3>Онлайн-банк 24/7</h3>
-        <p>Современное мобильное приложение и интернет-банк.</p>
-    </div>
-
-    <div class="feature">
-        <img src="assets/icons/user.svg" alt="" class="icon">
-        <h3>Персональный подход</h3>
-        <p>Гибкие программы для разных категорий клиентов.</p>
-    </div>
+<section class="product-highlight">
+    <h2>Вклад «Надёжный»</h2>
+    <p>Фиксированная ставка, возможность пополнения и частичного снятия.</p>
+    <a href="deposit.html" class="btn-secondary">Оформить вклад</a>
 </section>
 
-<?php include 'footer.php'; ?>
+<footer class="footer">
+    <p>© 2025 АО «Банк Х». Все права защищены.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
