@@ -1,0 +1,22 @@
+
+body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+}
+
+a, .btn {
+    color: #000000 !important;
+    background: #FFFF00 !important;
+    padding: 6px !important;
+}
+
+.site-header, .site-footer {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+* {
+    outline: none !important;
+}
