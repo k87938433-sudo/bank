@@ -4,6 +4,9 @@
         <p>© <?php echo date('Y'); ?> АО «Банк Х». Все права защищены.</p>
     </div>
 </footer>
-<script src="js/main.js"></script>
+
+<!-- Абсолютный путь к JS -->
+<script src="/js/main.js"></script>
+
 </body>
 </html>
