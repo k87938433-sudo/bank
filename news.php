@@ -1,30 +1,30 @@
 <?php include 'header.php'; ?>
 
-<h1>Новости банка</h1>
+<section class="page-section news-page">
+    <h1>Новости</h1>
 
-<div class="search-block">
-    <label>Поиск по новостям:
-        <input type="text" id="news-search" placeholder="Введите ключевое слово">
-    </label>
-</div>
+    <div class="news-grid">
 
-<div id="news-list">
-    <?php
-    $newsList = load_json('news.json');
-    if ($newsList):
-        usort($newsList, function($a, $b){ return $b['id'] <=> $a['id']; });
-        foreach ($newsList as $news):
-    ?>
-        <article class="news-item">
-            <h2><?php echo htmlspecialchars($news['title']); ?></h2>
-            <p><?php echo nl2br(htmlspecialchars($news['content'])); ?></p>
+        <article class="news-card">
+            <span class="news-date">12.02.2025</span>
+            <h3>Банк Х запустил обновлённый мобильный банк</h3>
+            <p>Обновлённое приложение предлагает улучшенный интерфейс, быстрые платежи и новые
+               инструменты финансового контроля.</p>
         </article>
-    <?php
-        endforeach;
-    else:
-    ?>
-        <p>Новости пока отсутствуют.</p>
-    <?php endif; ?>
-</div>
+
+        <article class="news-card">
+            <span class="news-date">28.01.2025</span>
+            <h3>Повышение ставок по вкладам</h3>
+            <p>Банк Х увеличил процентные ставки по основным депозитным продуктам для физических лиц.</p>
+        </article>
+
+        <article class="news-card">
+            <span class="news-date">15.01.2025</span>
+            <h3>Открытие нового офиса обслуживания</h3>
+            <p>В Москве открылось новое отделение, оснащённое зоной самообслуживания и консультационным центром.</p>
+        </article>
+
+    </div>
+</section>
 
 <?php include 'footer.php'; ?>
