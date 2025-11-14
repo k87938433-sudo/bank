@@ -5,13 +5,13 @@
 <section class="product-block">
     <h2>Вклады</h2>
     <p>Срочные и накопительные вклады с возможностью пополнения и капитализации процентов.</p>
-    <a href="deposit_application.php" class="btn-secondary">Оформить заявку</a>
+    <a href="/deposit_application.php" class="btn-secondary">Оформить заявку</a>
 </section>
 
 <section class="product-block">
     <h2>Кредиты</h2>
     <p>Потребительские кредиты, ипотека, кредиты на развитие бизнеса на прозрачных условиях.</p>
-    <a href="credit_application.php" class="btn-secondary">Подать заявку</a>
+    <a href="/credit_application.php" class="btn-secondary">Подать заявку</a>
 </section>
 
 <section class="product-block">
