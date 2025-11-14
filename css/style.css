@@ -391,3 +391,68 @@ body.accessible.dark {
         grid-template-columns: 1fr;
     }
 }
+/* Общие отступы */
+.page-section {
+    margin: 50px 0;
+}
+
+/* Заголовки */
+.page-section h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.page-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.page-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* Блок ценностей */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.value-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: #f7f9fc;
+    transition: 0.3s;
+}
+.value-card:hover {
+    background: #eef3fb;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Преимущества */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.adv-card {
+    padding: 20px;
+    background: #f6f8fa;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.adv-card:hover {
+    background: #e9eef5;
+}
+
+.adv-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
